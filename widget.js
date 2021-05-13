@@ -502,12 +502,18 @@ window.onload = function init() {
                                 console.log(error);
                             } else {
                                 let assetThumbnailUrl = blobUri + '/internal/' + result.name + '?' + SAS;
+                             
+                                let page_d = document.querySelector('meta[name="description"]');
+                                let page_d_content = "";
+                                if (page_d) {
+                                    page_d_content = page_d.content;
+                                }
     
                                 let data = {
                                     url: window.location.href,
                                     badgeid: getCookie("dmca_account_id"),
                                     title: document.title,
-                                    description: document.querySelector('meta[name="description"]').content,
+                                    description: page_d_content,
                                     thumbnailUrl: assetThumbnailUrl,
                                     type: "Page",
                                     status: "Active"
