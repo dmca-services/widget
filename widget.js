@@ -2133,13 +2133,13 @@ function addInternalStyles() {
         	}
         	#dmca-lock svg, #dmca-min-max-arrows svg {
         		padding: 4px;
-          width: 100%;
-          height: 100%;
+        		width: 100%;
+        		height: 100%;
         	}
-         #dmca-lock, #dmca-min-max-arrows {
-          width: 24px;
-          height: 24px;
-         }
+        	#dmca-lock, #dmca-min-max-arrows {
+        		width: 24px;
+        		height: 24px;
+        	}
         	#dmca-menu {
         		padding: 2px 4px;
         	}
@@ -2168,13 +2168,13 @@ function addInternalStyles() {
         	}
         	#dmca-lock svg, #dmca-min-max-arrows svg {
         		padding: 5px;
-          width: 100%;
-          height: 100%;
+        		width: 100%;
+        		height: 100%;
         	}
-         #dmca-lock, #dmca-min-max-arrows {
-          width: 26px;
-          height: 26px;
-         }
+        	#dmca-lock, #dmca-min-max-arrows {
+        		width: 26px;
+        		height: 26px;
+        	}
         	#dmca-menu {
         		padding: 3px 4px;
         	}
