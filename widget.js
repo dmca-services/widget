@@ -901,8 +901,6 @@ window.onload = function init() {
 
 // Create widget elements here
 function createWidgetElements() {
-    
-    // setCookie("dmca_verified_" + window.location.hostname, true);
 
     var ele = document.createElement("div");
     ele.id = "dmca-widget-wrapper";
@@ -2135,7 +2133,13 @@ function addInternalStyles() {
         	}
         	#dmca-lock svg, #dmca-min-max-arrows svg {
         		padding: 4px;
+          width: 100%;
+          height: 100%;
         	}
+         #dmca-lock, #dmca-min-max-arrows {
+          width: 24px;
+          height: 24px;
+         }
         	#dmca-menu {
         		padding: 2px 4px;
         	}
@@ -2164,7 +2168,13 @@ function addInternalStyles() {
         	}
         	#dmca-lock svg, #dmca-min-max-arrows svg {
         		padding: 5px;
+          width: 100%;
+          height: 100%;
         	}
+         #dmca-lock, #dmca-min-max-arrows {
+          width: 26px;
+          height: 26px;
+         }
         	#dmca-menu {
         		padding: 3px 4px;
         	}
