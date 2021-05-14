@@ -2135,6 +2135,9 @@ function addInternalStyles() {
         		padding: 4px;
         		width: 100%;
         		height: 100%;
+        		-webkit-box-sizing: border-box;
+        		-moz-box-sizing: border-box;
+        		box-sizing: border-box;
         	}
         	#dmca-lock, #dmca-min-max-arrows {
         		width: 24px;
@@ -2170,6 +2173,9 @@ function addInternalStyles() {
         		padding: 5px;
         		width: 100%;
         		height: 100%;
+        		-webkit-box-sizing: border-box;
+        		-moz-box-sizing: border-box;
+        		box-sizing: border-box;
         	}
         	#dmca-lock, #dmca-min-max-arrows {
         		width: 26px;
@@ -2463,8 +2469,11 @@ function addInternalStyles() {
         	font-size: 16px;
         	margin-bottom: 5px;
         	box-shadow: rgb(0 0 0 / 7%) 0px 1px 3px 0px inset;
-            border: 1px solid rgba(225, 225, 225, 0.6);
+        	border: 1px solid rgba(225, 225, 225, 0.6);
         	outline: 0;
+        	-webkit-box-sizing: border-box;
+        	-moz-box-sizing: border-box;
+        	box-sizing: border-box;
         }
         
         #dmca-form-login {
