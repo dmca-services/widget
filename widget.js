@@ -2125,7 +2125,7 @@ function addInternalStyles() {
 
         @media (max-width: 389.98px) {
         	#dmca-widget-wrapper {
-        		width: calc(100% - 10px);
+        		width: 100%;
         		padding: 5px;
         	}
         	#dmca-logo, #dmca-page-status, #dmca-verified {
@@ -2812,6 +2812,8 @@ function addInternalStyles() {
         #dmca-page-thumbnail {
         	width: 75px;
         	height: auto;
+        	max-height: 75px;
+        	overflow-y: hidden;
         	margin-right: 5px;
         }
         
