@@ -2367,6 +2367,7 @@ function addInternalStyles() {
         
         #dmca-widget-wrapper * {
         	font-family: 'Open Sans',sans-serif;
+        	box-sizing: border-box;
         }
         
         input.dmca-input::placeholder, textarea.dmca-textarea::placeholder {
