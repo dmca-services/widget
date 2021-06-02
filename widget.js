@@ -2121,7 +2121,7 @@ function addInternalStyles() {
 
     // css rules
     var styles = `
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&display=swap');
 
         @media (max-width: 389.98px) {
         	#dmca-widget-wrapper {
@@ -2366,14 +2366,12 @@ function addInternalStyles() {
         }
         
         #dmca-widget-wrapper * {
-        	font-family: 'Montserrat', sans-serif;
+        	font-family: 'Open Sans',sans-serif;
         	box-sizing: border-box;
-        	font-weight: 400 !important;
         }
         
         input.dmca-input::placeholder, textarea.dmca-textarea::placeholder {
-        	font-family: 'Montserrat', sans-serif;
-        	font-weight: 400 !important;
+        	font-family: 'Open Sans',sans-serif;
         	color: #CBCBCB;
         }
         
