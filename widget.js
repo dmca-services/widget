@@ -1697,7 +1697,7 @@ function generateUUID() {
 // Save widget settings here 
 function updateWidgetSettings(acc_id, domain, dark_theme, dock_side, border_radius, right_click) {
     
-    const sasToken = '?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-06-14T17:36:46Z&st=2021-01-14T09:36:46Z&spr=https&sig=9Ae4N2cgvvmlBtkOyGAcsSk3cHbHJ8ijjC8xa9MQBpw%3D';
+    const sasToken = '?sv=2020-02-10&ss=bfqt&srt=so&sp=rwdlacuptfx&se=2024-06-15T15:56:41Z&st=2021-06-15T07:56:41Z&spr=https&sig=vEXVc0Q%2B6UD2smeejWolcMdBX53yCp5fwg0CbvP%2FT%2FI%3D';
     const tableUri = 'https://' + 'dmcaadder' + '.table.core.windows.net';
 
     let tableService = AzureStorage.Table.createTableServiceWithSas(tableUri, sasToken);
@@ -1729,7 +1729,7 @@ function updateWidgetSettings(acc_id, domain, dark_theme, dock_side, border_radi
 // Get widget settings here
 function getWidgetSettings(hostname, callBack) {
     
-    const sasToken = '?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-06-14T17:36:46Z&st=2021-01-14T09:36:46Z&spr=https&sig=9Ae4N2cgvvmlBtkOyGAcsSk3cHbHJ8ijjC8xa9MQBpw%3D';
+    const sasToken = '?sv=2020-02-10&ss=bfqt&srt=so&sp=rwdlacuptfx&se=2024-06-15T15:56:41Z&st=2021-06-15T07:56:41Z&spr=https&sig=vEXVc0Q%2B6UD2smeejWolcMdBX53yCp5fwg0CbvP%2FT%2FI%3D';
     const tableUri = 'https://' + 'dmcaadder' + '.table.core.windows.net';
 
     let tableService = AzureStorage.Table.createTableServiceWithSas(tableUri, sasToken);
@@ -1770,7 +1770,7 @@ function getWidgetSettings(hostname, callBack) {
 // Get widget settings by using account id and hostname 
 function getWidgetSettingsByAccountId(acc_id, hostname, callBack) {
     
-    const sasToken = '?sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2021-06-14T17:36:46Z&st=2021-01-14T09:36:46Z&spr=https&sig=9Ae4N2cgvvmlBtkOyGAcsSk3cHbHJ8ijjC8xa9MQBpw%3D';
+    const sasToken = '?sv=2020-02-10&ss=bfqt&srt=so&sp=rwdlacuptfx&se=2024-06-15T15:56:41Z&st=2021-06-15T07:56:41Z&spr=https&sig=vEXVc0Q%2B6UD2smeejWolcMdBX53yCp5fwg0CbvP%2FT%2FI%3D';
     const tableUri = 'https://' + 'dmcaadder' + '.table.core.windows.net';
 
     let tableService = AzureStorage.Table.createTableServiceWithSas(tableUri, sasToken);
