@@ -477,7 +477,7 @@ window.onload = function init() {
             if (document.querySelector('meta[property="og:image"]') != null) {
                 var thumbnail = document.querySelector('meta[property="og:image"]').content;
             } else {
-                var thumbnail = "https://image.thum.io/get/width/1280/crop/720/maxAge/24/allowJPG/" + window.location.href;
+                var thumbnail = "https://image.thum.io/get/width/1280/crop/720/maxAge/24/noanimate/allowJPG/" + window.location.href;
             }
     
             if (thumbnail != undefined) {
@@ -702,7 +702,7 @@ window.onload = function init() {
     
             pages.map(id => {
     
-                let thumbnail = "https://image.thum.io/get/width/1280/crop/720/maxAge/24/allowJPG/" + id;
+                let thumbnail = "https://image.thum.io/get/width/1280/crop/720/maxAge/24/noanimate/allowJPG/" + id;
     
                 fetch(thumbnail)
                     .then(function (response) {
@@ -2052,7 +2052,7 @@ function siteProfiledata() {
     document.getElementById("dmca-profile-generated-on").innerHTML = data.DATE_ENTERED.split("T")[0];
     document.getElementById("dmca-profile-updated-on").innerHTML = data.DATE_MODIFIED.split("T")[0];
     document.getElementById("dmca-profile-id").innerHTML = data.ID;
-    document.getElementById("dmca-profile-screenshot").setAttribute("src", "https://image.thum.io/get/width/1280/crop/720/maxAge/24/allowJPG/" + window.location.protocol + "//" + window.location.hostname);
+    document.getElementById("dmca-profile-screenshot").setAttribute("src", "https://image.thum.io/get/width/1280/crop/720/maxAge/24/noanimate/allowJPG/" + window.location.protocol + "//" + window.location.hostname);
 
     if (data.FB_URL != null) {
         document.getElementById("dmca-profile-fb").setAttribute("href", data.FB_URL);
