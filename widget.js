@@ -981,7 +981,7 @@ function createWidgetElements() {
     </div>
     
     <div id="dmca-page-details" class="change-border-radius dmca-border-dark dmca-bg-white dmca-change-theme-bg dmca-change-theme-border">
-        <img id="dmca-page-thumbnail" src="https://ppro-adder.azurewebsites.net/PP2020/images/temp/page-placeholder.png" alt="Page thumbnail" class="change-border-radius dmca-border-dark dmca-change-theme-border">
+        <img id="dmca-page-thumbnail" src="https://widgets.dmca.com/page-placeholder.png" alt="Page thumbnail" class="change-border-radius dmca-border-dark dmca-change-theme-border">
         <div>
             <h5 id="dmca-page-title" class="dmca-text-dark dmca-change-theme-text"></h5>
             <p id="dmca-page-description" class="dmca-text-dark dmca-change-theme-text"></p>
@@ -1433,7 +1433,7 @@ function updateAssetDetails(data) {
     document.getElementById("dmca-asset-title").value = data.title;
     document.getElementById("dmca-asset-description").value = data.description;
     if (data.thumbnailUrl == null) {
-        document.getElementById("dmca-thumbnail").setAttribute("src", "https://ppro-adder.azurewebsites.net/PP2020/images/temp/page-placeholder.png");
+        document.getElementById("dmca-thumbnail").setAttribute("src", "https://widgets.dmca.com/page-placeholder.png");
     } else {
         let thumb = data.thumbnailUrl;
         thumb = thumb.replace(/:\s*/g, (i => m => !i++ ? m : "%3A")(0));
