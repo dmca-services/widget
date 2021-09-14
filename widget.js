@@ -2098,7 +2098,7 @@ function addStyleSheet() {
     const link = document.createElement("link");
     link.type = "text/css";
     link.rel = "stylesheet";
-    link.href = "https://ppro-adder.azurewebsites.net/PP2020/css/widget.css";
+    link.href = "https://widgets.dmca.com/widget.css";
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
