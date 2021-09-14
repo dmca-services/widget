@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans&display=swap');
+
+/* Mobile */
+@media (max-width: 389.98px) {
+	#dmca-widget-wrapper {
+		width: 100%;
+		padding: 5px;
+	}
+	#dmca-logo, #dmca-page-status, #dmca-verified {
+		font-size: 14px !important;
+	}
+	#dmca-lock svg, #dmca-min-max-arrows svg {
+		padding: 4px;
+		width: 100%;
+		height: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#dmca-lock, #dmca-min-max-arrows {
+    	width: 24px;
+        height: 24px;
+	}
+	#dmca-menu {
+		padding: 2px 4px;
+	}
+	.dmca-dock-bottom-right, .dmca-dock-bottom-left {
+		bottom: 0;
+		right: 0;
+	}
+	
+	.dmca-dock-top-right, .dmca-dock-top-left {
+		top: 0;
+		left: 0;
+	}
+	
+	#dmca-menu-content {
+		right: 5px;
+	}
+}
+
+/* Other screens */
+@media (min-width: 390px) {
+	#dmca-widget-wrapper {
+		width: 390px;
+		padding: 10px;
+	}
+	#dmca-logo, #dmca-page-status, #dmca-verified {
+		font-size: 16px !important;
+	}
+	#dmca-lock svg, #dmca-min-max-arrows svg {
+		padding: 5px;
+		width: 100%;
+		height: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#dmca-lock, #dmca-min-max-arrows {
+    	width: 26px;
+        height: 26px;
+	}
+	#dmca-menu {
+		padding: 3px 4px;
+	}
+	.dmca-dock-bottom-right {
+		bottom: 0;
+		right: 5px;
+	}
+	
+	.dmca-dock-bottom-left {
+		bottom: 0;
+		left: 5px;
+	}
+	
+	.dmca-dock-top-right {
+		top: 0;
+		right: 5px;
+	}
+	
+	.dmca-dock-top-left {
+		top: 0;
+		left: 5px;
+	}
+	
+	#dmca-menu-content {
+		right: 10px;
+	}
+}
+
+/* Styles for DMCA widget */ 
+
+h4.dmca-title {
+	font-size: 18px;
+}
+
+h5.dmca-title {
+	font-size: 20px;
+}
+
+.dmca-border-radius-sm {
+	border-radius: 5px;
+}
+
+.dmca-border-radius-lg {
+	border-radius: 25px;
+}
+
+.dmca-top-border-radius-sm {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.dmca-top-border-radius-lg {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.dmca-bottom-border-radius-sm {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.dmca-bottom-border-radius-lg {
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#dmca-widget-header-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dmca-header-content1, .dmca-header-content2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dmca-header-content1>div, .dmca-header-content2>div {
+	margin-right: 3px;
+}
+
+.dmca-header-content1>div:last-child, .dmca-header-content2>div:last-child {
+	margin-right: 0px;
+}
+
+#dmca-logo, #dmca-page-status, #dmca-lock, #dmca-menu, #dmca-verified, #dmca-min-max-arrows {
+	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 3px;
+}
+
+#dmca-logo, #dmca-page-status, #dmca-verified {
+	display: inline-block;
+	padding: 5px 5px;
+	font-weight: 800;
+	letter-spacing: -0.1px;
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+#dmca-verified {
+	background-color: #D9B214;
+}
+
+#dmca-logo {
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+#dmca-page-status {
+	white-space:nowrap;
+	overflow: hidden;
+	
+}
+
+#dmca-lock, #dmca-min-max-arrows {
+	display: inline-block;
+}
+
+#dmca-min-max-arrows {
+	cursor: pointer;
+}
+
+/* End of loader styles */
+
+/* Menu styles*/
+
+#dmca-menu {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#dmca-menu>div.dmca-bar {
+	width: 18px;
+	height: 3px;
+	margin: 3px 0;
+}
+
+#dmca-menu>div.dmca-bar:first-child {
+	margin: 2px 0 3px 0;
+}
+
+#dmca-menu:hover>div.dmca-bar {
+	background-color: #eeeeee;
+}
+
+#dmca-menu-content {
+	display: none;
+	position: absolute;
+	min-width: 120px;
+	box-shadow: 0px 2px 2px 3px rgba(204,204,204,0.4);
+	z-index: 1;
+	margin-top: 3px;
+}
+
+#dmca-menu-content a {
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+#dmca-menu-content.dmca-border-radius-sm a:first-child {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#dmca-menu-content.dmca-border-radius-sm a:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#dmca-menu-content a:hover {
+	background-color: rgba(107, 197, 48, 0.8);
+}
+
+#dmca-menu:hover #dmca-menu-content {
+	display: block;
+}
+
+/* End of menu styles */
+
+#dmca-widget-wrapper {
+	position: fixed;
+	z-index: 99999;
+	font-size: 16px;
+	line-height: 1.25;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+}
+
+#dmca-widget-wrapper * {
+	font-family: 'Open Sans',sans-serif;
+	box-sizing: border-box;
+}
+
+input.dmca-input::placeholder, textarea.dmca-textarea::placeholder {
+	font-family: 'Open Sans',sans-serif;
+	color: #CBCBCB;
+}
+
+#dmca-widget-header {
+	margin-bottom: 10px;
+}
+
+#dmca-widget-header img {
+	height: 30px;
+	width: auto;
+}
+
+#dmca-widget-content {
+	min-height: 165px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#dmca-widget-wrapper, #dmca-error-login, #dmca-widget-content, #dmca-wrapper-msg-success, #dmca-site-profile, #dmca-widget-settings, #dmca-claim-domain, #dmca-menu, #dmca-btn-dark-theme-on, #dmca-btn-dark-theme-off, #dmca-btn-auto-submit, #dmca-btn-auto-submit-on, #dmca-btn-auto-submit-off, #dmca-file-error, #dmca-page-details, #dmca-thumbnail-input, #dmca-wrapper-msg-error, #dmca-form-login, #dmca-wrapper-asset, #dmca-btn-update, #dmca-btn-protect, .dmca-arrow.dmca-down, #dmca-btn-delete, #dmca-form-update-asset, #dmca-verified, #dmca-lock, #dmca-btn-right-click-on, #dmca-btn-right-click-off {
+	display: none;
+}
+
+.dmca-text-green {
+	color: #6BC530;
+}
+
+.dmca-text-red {
+	color: #CE1312;
+}
+
+.dmca-text-gray {
+	color: #999999;
+}
+
+.dmca-text-dark {
+	color: #1F1F1F;
+}
+
+.dmca-text-white {
+	color: #fff;
+}
+
+.dmca-bg-dark {
+	background-color: #1F1F1F;
+}
+
+.dmca-bg-white {
+	background-color: #FFFFFF;
+}
+
+.dmca-bg-green {
+	background-color: #6BC530;
+}
+
+.dmca-bg-gray {
+	background-color: #999999;
+}
+
+.dmca-border-dark {
+	box-shadow: rgb(0 0 0 / 15%) 0px 4px 15px 0px, rgb(0 0 0 / 15%) 0px 1px 2px 0px, rgb(100 188 43 / 60%) 0px 2px 0px 0px inset;
+}
+
+.dmca-border-white {
+	box-shadow: rgb(255 255 255 / 10%) 0px 4px 15px 0px, rgb(255 255 255 / 10%) 0px 1px 2px 0px, rgb(100 188 43 / 60%) 0px 2px 0px 0px inset;
+}
+
+#dmca-file-error {
+	color: #CE1312;
+	font-size: 13px;
+}
+
+.dmca-text-center {
+	text-align: center;
+}
+
+.dmca-text-bold {
+	font-weight: 700;
+}
+
+.dmca-text-shadow {
+	text-shadow: 0px 0px 3px rgb(0 0 0 / 7%);
+}
+
+.dmca-show {
+	opacity: 1;
+	transition: opacity 500ms;
+}
+
+.dmca-hide {
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+input.dmca-input, textarea.dmca-textarea {
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 5px;
+	box-shadow: rgb(0 0 0 / 7%) 0px 1px 3px 0px inset;
+    border: 1px solid rgba(225, 225, 225, 0.6);
+	outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#dmca-form-login {
+	padding: 10px;
+}
+
+#dmca-form-login input {
+	padding: 5px 35px;
+}
+
+#dmca-form-update-asset input, #dmca-form-update-asset textarea {
+	padding: 5px 10px;
+}
+
+#dmca-form-update-asset, #dmca-site-profile, #dmca-widget-settings, #dmca-claim-domain {
+	padding: 16px;
+	margin: 10px 0;
+}
+
+#dmca-form-update-asset lable {
+	color: #999999;
+}
+
+.dmca-input-wrapper {
+	position: relative;
+}
+
+.dmca-icon_email, .dmca-icon_pwd {
+	position: absolute;
+	top: 42%;
+	left: 5px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#dmca-form-login lable {
+	font-size: 13px;
+	margin-bottom: 3px;
+}
+
+#dmca-form-login h4 {
+	margin-bottom: 10px;
+}
+
+#dmca-site-profile p {
+	margin-top: 5px;
+}
+
+#dmca-site-profile a {
+	text-decoration: none;
+}
+
+#dmca-site-profile p.dmca-border-bottom {
+	border-bottom: 1px solid #eee;
+}
+
+#dmca-site-profile p i {
+	font-size: 14px;
+}
+
+#dmca-site-profile p span {
+	font-size: 14px;
+}
+
+.dmca-btn {
+	padding: 5px 15px;
+	border: none;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.dmca-btn:hover {
+	cursor: pointer;
+}
+
+.dmca-btn:focus {
+	outline: none;
+}
+
+.dmca-btn-green {
+	background-color: #6BC530;
+	border: 2px solid #6BC530;
+	color: #fff;
+	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
+}
+
+.dmca-btn-green:hover {
+	background-color: #fff;
+	color: #6BC530;
+}
+
+.dmca-btn-red {
+	background-color: #CE1312;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.dmca-btn-red:hover {
+	background-color: #fff;
+	color: #CE1312;
+}
+
+.dmca-btn-green-outline:hover {
+	background-color: #6BC530;
+	color: #fff;
+}
+
+.dmca-btn-green-outline {
+	background-color: #fff;
+	border: 2px solid #6BC530;
+	color: #6BC530;
+}
+
+.dmca-btn-dark {
+	background-color: #1F1F1F;
+	border: 2px solid #1F1F1F;
+	color: #fff;
+}
+
+.dmca-btn-dark:hover {
+	background-color: #fff;
+	color: #1F1F1F;
+}
+
+.dmca-btn-dark-outline:hover {
+	background-color: #1F1F1F;
+	color: #fff;
+}
+
+.dmca-btn-dark-outline {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 5px;
+	color: #1F1F1F;
+}
+
+.dmca-btn-white {
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #1F1F1F;
+}
+
+.dmca-btn-white:hover {
+	background-color: #1F1F1F;
+	color: #fff;
+}
+
+.dmca-btn-white-outline:hover {
+	background-color: #fff;
+	color: #1F1F1F;
+}
+
+.dmca-btn-white-outline {
+	background-color: #1F1F1F;
+	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
+	color: #fff;
+}
+
+#dmca-btn-update, #dmca-btn-protect {
+	margin: 10px 0px;
+}
+
+#dmca-wrapper-msg-success, #dmca-wrapper-msg-error {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#dmca-thumbnail, #dmca-profile-screenshot {
+	width: 100%;
+	height: auto;
+	box-shadow: rgb(0 0 0 / 7%) 0px 1px 3px 0px inset;
+    border: 1px solid rgba(225, 225, 225, 0.6);
+}
+
+svg#dmca-upload {
+	width: 20px;
+	height: 20px;
+	padding: 10px;
+	border-radius: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	border: 1px solid #1F1F1F;
+}
+
+svg#dmca-upload:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dmca-icon-white path, .dmca-arrow path {
+    fill: #ffffff;
+}
+
+.dmca-auto-submit {
+	margin-top: 10px;
+}
+
+.dmca-widget-theme, .dmca-widget-dock, .dmca-widget-border-radius {
+	margin-top: 5px;
+}
+
+.dmca-auto-submit {
+	flex-direction: columns;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;	
+}
+
+.dmca-widget-theme, .dmca-widget-dock, .dmca-widget-border-radius {
+	display: flex;
+	flex-direction: columns;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;	
+}
+
+.dmca-auto-submit span, .dmca-widget-theme span {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.dmca-widget-dock span, .dmca-widget-border-radius span {
+	border: 2px solid #cccccc;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.dmca-widget-dock span {
+	width: 30px;
+	height: 30px;
+}
+
+.dmca-widget-border-radius span {
+	width: 45px;
+	height: 30px;
+}
+
+.dmca-widget-dock span:hover, .dmca-widget-border-radius span:hover {
+	background-color: #eeeeee;
+}
+
+.dmca-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+#dmca-btn-dock-tl .dmca-dot {
+  top: 1px;
+  right: 9px;
+}
+
+#dmca-btn-dock-tr .dmca-dot {
+  top: 1px;
+  left: 9px;
+}
+
+#dmca-btn-dock-bl .dmca-dot {
+  bottom: -19px;
+  right: 9px;
+}
+
+#dmca-btn-dock-br .dmca-dot {
+  bottom: -19px;
+  left: 9px;
+}
+
+.dmca-widget-dock span.dmca-active, .dmca-widget-border-radius span.dmca-active {
+	border: 2px solid #6BC530;
+}
+
+.dmca-auto-submit span:last-child, .dmca-widget-theme span:last-child {
+	cursor: auto;
+}
+
+#dmca-widget-settings h5 {
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+#dmca-widget-settings button, #dmca-claim-domain button {
+	margin-top: 10px;
+}
+
+#dark-theme-msg {
+	font-size: 14px;
+}
+
+/* Tooltip*/
+#dmca-tooltiptext {
+	visibility: hidden;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	z-index: 1;
+	bottom: 105%;
+	left: 20%;
+	margin-left: -60px;
+}
+
+#dmca-tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+}
+
+.dmca-tooltip:hover #dmca-tooltiptext {
+	visibility: visible;
+}
+/* End of tooltip */
+
+/* Page details */
+#dmca-page-details {
+	padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+#dmca-page-details div {
+	width: 100%;
+}
+
+#dmca-page-thumbnail {
+	width: 75px;
+	height: auto;
+	max-height: 75px;
+	overflow-y: hidden;
+	margin-right: 5px;
+}
+
+#dmca-page-title {
+	font-size: 13px;
+}
+
+#dmca-page-description {
+	font-size: 12px;
+	text-align: justify;
+}
+/* End of page details */
+
+/* Loader styles */
+
+.dmca-loader-no {
+	display: none;
+}
+
+.dmca-loader {
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 100000;
+}
+
+.dmca-loader>span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin: 0 6px;
+    transform: translate3d(0);
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dmca-loader>span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dmca-loader>span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    to {
+        width: 12px;
+        height: 12px;
+        transform: translate3d(0, -8px, 0);
+    }
+}
+
+/* End of loader styles */
+
+/* Loader complete star */
+#dmca-icon-star {
+	position: absolute;
+	top: 45%;
+	left: calc(50% - 10px);
+	fill: #6BC530;
+    width: 20px;
+    height: 20px;
+	z-index: 1000;
+	display: none;
+}
+
+.dmca-animate {
+	animation: dmca-bounce 1.3s;
+    transform: scale(1);
+}
+
+@keyframes dmca-bounce {
+	0% {
+	    transform: scale(1);
+	    opacity: 1;
+	    fill: #6BC530;
+	}
+
+	25% {
+	    transform: scale(2);
+	    opacity: 0.8;
+	    fill: #6BC530;
+	}
+
+	50% {
+	    transform: scale(.8);
+	    opacity: 1;
+	    fill: #c3cfe2;
+	    -ms-transform: rotate(-180deg); /* IE 9 */
+	    transform: rotate(-180deg); /* Standard syntax */
+	}
+
+	75% {
+	    transform: scale(1.5);
+	    opacity: 0.8;
+	    fill: #6BC530;
+	}
+
+	100% {
+	    transform: scale(1);
+	    fill: #6BC530;
+	}
+}
+
+/* End of loader complete star */
+     
+/* Overlay styles */
+#dmca-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 350;
+}
+
+/* End of overlay styles */
