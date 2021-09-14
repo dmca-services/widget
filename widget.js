@@ -666,7 +666,7 @@ window.onload = function init() {
     document.getElementById("dmca-btn-creator-profile").addEventListener("click", function (event) {
         event.preventDefault();
         let hostname = window.location.hostname;
-        let profile_url = "https://ppro-adder.azurewebsites.net/add/profile.aspx?website=" + hostname.replace("https:", "").replace("http:", "").replace(/\//g, "");
+        let profile_url = "https://www.dmca.com/add/profile.aspx?website=" + hostname.replace("https:", "").replace("http:", "").replace(/\//g, "");
         let target = window.open(profile_url, '_blank');
         target.focus();
     });
