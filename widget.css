@@ -405,7 +405,7 @@ input.dmca-input, textarea.dmca-textarea {
 }
 
 #dmca-form-login h4 {
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 
 #dmca-site-profile p {
