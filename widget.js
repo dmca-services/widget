@@ -2518,7 +2518,7 @@ function addInternalStyles() {
         }
         
         #dmca-form-login h4 {
-        	margin-bottom: 10px;
+        	margin-bottom: 10px !important;
         }
         
         #dmca-site-profile p {
