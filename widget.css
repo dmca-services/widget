@@ -162,7 +162,7 @@ h5.dmca-title {
 }
 
 #dmca-verified {
-	background-color: #D9B214;
+	background-color: #D9B214 !important;
 }
 
 #dmca-logo {
@@ -204,7 +204,7 @@ h5.dmca-title {
 }
 
 #dmca-menu:hover>div.dmca-bar {
-	background-color: #eeeeee;
+	background-color: #eeeeee !important;
 }
 
 #dmca-menu-content {
@@ -235,7 +235,7 @@ h5.dmca-title {
 }
 
 #dmca-menu-content a:hover {
-	background-color: rgba(107, 197, 48, 0.8);
+	background-color: rgba(107, 197, 48, 0.8) !important;
 }
 
 #dmca-menu:hover #dmca-menu-content {
@@ -302,19 +302,19 @@ input.dmca-input::placeholder, textarea.dmca-textarea::placeholder {
 }
 
 .dmca-bg-dark {
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 }
 
 .dmca-bg-white {
-	background-color: #FFFFFF;
+	background-color: #FFFFFF !important;
 }
 
 .dmca-bg-green {
-	background-color: #6BC530;
+	background-color: #6BC530 !important;
 }
 
 .dmca-bg-gray {
-	background-color: #999999;
+	background-color: #999999 !important;
 }
 
 .dmca-border-dark {
@@ -353,15 +353,15 @@ input.dmca-input::placeholder, textarea.dmca-textarea::placeholder {
 }
 
 input.dmca-input, textarea.dmca-textarea {
-	width: 100%;
-	font-size: 16px;
-	margin-bottom: 5px;
-	box-shadow: rgb(0 0 0 / 7%) 0px 1px 3px 0px inset;
-    border: 1px solid rgba(225, 225, 225, 0.6);
-	outline: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	width: 100% !important;
+	font-size: 16px !important;
+	margin-bottom: 5px !important;
+	box-shadow: rgb(0 0 0 / 7%) 0px 1px 3px 0px inset !important;
+    	border: 1px solid rgba(225, 225, 225, 0.6) !important;
+	outline: 0 !important;
+    	-webkit-box-sizing: border-box !important;
+    	-moz-box-sizing: border-box !important;
+    	box-sizing: border-box !important;
 }
 
 #dmca-form-login {
@@ -369,11 +369,11 @@ input.dmca-input, textarea.dmca-textarea {
 }
 
 #dmca-form-login input {
-	padding: 5px 35px;
+	padding: 5px 35px !important;
 }
 
 #dmca-form-update-asset input, #dmca-form-update-asset textarea {
-	padding: 5px 10px;
+	padding: 5px 10px !important;
 }
 
 #dmca-form-update-asset, #dmca-site-profile, #dmca-widget-settings, #dmca-claim-domain {
@@ -446,79 +446,79 @@ input.dmca-input, textarea.dmca-textarea {
 }
 
 .dmca-btn-green {
-	background-color: #6BC530;
+	background-color: #6BC530 !important;
 	border: 2px solid #6BC530;
 	color: #fff;
 	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
 }
 
 .dmca-btn-green:hover {
-	background-color: #fff;
+	background-color: #fff !important;
 	color: #6BC530;
 }
 
 .dmca-btn-red {
-	background-color: #CE1312;
+	background-color: #CE1312 !important;
 	color: #fff;
 	border: 2px solid #fff;
 }
 
 .dmca-btn-red:hover {
-	background-color: #fff;
+	background-color: #fff !important;
 	color: #CE1312;
 }
 
 .dmca-btn-green-outline:hover {
-	background-color: #6BC530;
+	background-color: #6BC530 !important;
 	color: #fff;
 }
 
 .dmca-btn-green-outline {
-	background-color: #fff;
+	background-color: #fff !important;
 	border: 2px solid #6BC530;
 	color: #6BC530;
 }
 
 .dmca-btn-dark {
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 	border: 2px solid #1F1F1F;
 	color: #fff;
 }
 
 .dmca-btn-dark:hover {
-	background-color: #fff;
+	background-color: #fff !important;
 	color: #1F1F1F;
 }
 
 .dmca-btn-dark-outline:hover {
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 	color: #fff;
 }
 
 .dmca-btn-dark-outline {
-	background-color: #fff;
+	background-color: #fff !important;
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 5px;
 	color: #1F1F1F;
 }
 
 .dmca-btn-white {
-	background-color: #fff;
+	background-color: #fff !important;
 	border: 2px solid #fff;
 	color: #1F1F1F;
 }
 
 .dmca-btn-white:hover {
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 	color: #fff;
 }
 
 .dmca-btn-white-outline:hover {
-	background-color: #fff;
+	background-color: #fff !important;
 	color: #1F1F1F;
 }
 
 .dmca-btn-white-outline {
-	background-color: #1F1F1F;
+	background-color: #1F1F1F !important;
 	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
 	color: #fff;
 }
@@ -547,13 +547,13 @@ svg#dmca-upload {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.6) !important;
 	cursor: pointer;
 	border: 1px solid #1F1F1F;
 }
 
 svg#dmca-upload:hover {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .dmca-icon-white path, .dmca-arrow path {
@@ -605,7 +605,7 @@ svg#dmca-upload:hover {
 }
 
 .dmca-widget-dock span:hover, .dmca-widget-border-radius span:hover {
-	background-color: #eeeeee;
+	background-color: #eeeeee !important;
 }
 
 .dmca-dot {
@@ -661,7 +661,7 @@ svg#dmca-upload:hover {
 #dmca-tooltiptext {
 	visibility: hidden;
 	width: 80%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6) !important;
 	color: #fff;
 	text-align: center;
 	padding: 10px;
@@ -819,7 +819,7 @@ svg#dmca-upload:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5) !important;
     width: 100%;
     height: 100%;
     display: none;
