@@ -439,6 +439,7 @@ input.dmca-input, textarea.dmca-textarea {
 
 .dmca-btn:hover {
 	cursor: pointer;
+	text-decoration: none !important;
 }
 
 .dmca-btn:focus {
@@ -645,7 +646,8 @@ svg#dmca-upload:hover {
 }
 
 #dmca-widget-settings h5 {
-	margin-top: 15px;
+	margin-top: 15px !important;
+    	margin-bottom: 0px !important;
 	font-size: 14px;
 }
 
@@ -827,3 +829,7 @@ svg#dmca-upload:hover {
 }
 
 /* End of overlay styles */
+
+#dmca-profile-fb svg, #dmca-profile-twitter svg, #dmca-profile-linkedin svg {
+	display: inline !important;
+}
