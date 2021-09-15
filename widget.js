@@ -2211,6 +2211,7 @@ function addInternalStyles() {
         
         h4.dmca-title {
         	font-size: 18px;
+         margin: 0px !important;
         }
         
         h5.dmca-title {
@@ -2395,23 +2396,23 @@ function addInternalStyles() {
         }
         
         .dmca-text-green {
-        	color: #6BC530;
+        	color: #6BC530 !important;
         }
         
         .dmca-text-red {
-        	color: #CE1312;
+        	color: #CE1312 !important;
         }
         
         .dmca-text-gray {
-        	color: #999999;
+        	color: #999999 !important;
         }
         
         .dmca-text-dark {
-        	color: #1F1F1F;
+        	color: #1F1F1F !important;
         }
         
         .dmca-text-white {
-        	color: #fff;
+        	color: #fff !important;
         }
         
         .dmca-bg-dark {
@@ -2439,7 +2440,7 @@ function addInternalStyles() {
         }
         
         #dmca-file-error {
-        	color: #CE1312;
+        	color: #CE1312 !important;
         	font-size: 13px;
         }
         
@@ -2495,7 +2496,7 @@ function addInternalStyles() {
         }
         
         #dmca-form-update-asset lable {
-        	color: #999999;
+        	color: #999999 !important;
         }
         
         .dmca-input-wrapper {
@@ -2562,79 +2563,79 @@ function addInternalStyles() {
         .dmca-btn-green {
         	background-color: #6BC530 !important;
         	border: 2px solid #6BC530;
-        	color: #fff;
+        	color: #fff !important;
         	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
         }
         
         .dmca-btn-green:hover {
         	background-color: #fff !important;
-        	color: #6BC530;
+        	color: #6BC530 !important;
         }
         
         .dmca-btn-red {
         	background-color: #CE1312 !important;
-        	color: #fff;
+        	color: #fff !important;
         	border: 2px solid #fff;
         }
         
         .dmca-btn-red:hover {
         	background-color: #fff !important;
-        	color: #CE1312;
+        	color: #CE1312 !important;
         }
         
         .dmca-btn-green-outline:hover {
         	background-color: #6BC530 !important;
-        	color: #fff;
+        	color: #fff !important;
         }
         
         .dmca-btn-green-outline {
         	background-color: #fff !important;
         	border: 2px solid #6BC530;
-        	color: #6BC530;
+        	color: #6BC530 !important;
         }
         
         .dmca-btn-dark {
         	background-color: #1F1F1F !important;
         	border: 2px solid #1F1F1F;
-        	color: #fff;
+        	color: #fff !important;
         }
         
         .dmca-btn-dark:hover {
         	background-color: #fff !important;
-        	color: #1F1F1F;
+        	color: #1F1F1F !important;
         }
         
         .dmca-btn-dark-outline:hover {
         	background-color: #1F1F1F !important;
-        	color: #fff;
+        	color: #fff !important;
         }
         
         .dmca-btn-dark-outline {
         	background-color: #fff !important;
         	box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 5px;
-        	color: #1F1F1F;
+        	color: #1F1F1F !important;
         }
         
         .dmca-btn-white {
         	background-color: #fff !important;
         	border: 2px solid #fff;
-        	color: #1F1F1F;
+        	color: #1F1F1F !important;
         }
         
         .dmca-btn-white:hover {
         	background-color: #1F1F1F !important;
-        	color: #fff;
+        	color: #fff !important;
         }
         
         .dmca-btn-white-outline:hover {
         	background-color: #fff !important;
-        	color: #1F1F1F;
+        	color: #1F1F1F !important;
         }
         
         .dmca-btn-white-outline {
         	background-color: #1F1F1F !important;
         	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 5px;
-        	color: #fff;
+        	color: #fff !important;
         }
         
         #dmca-btn-update, #dmca-btn-protect {
@@ -2776,7 +2777,7 @@ function addInternalStyles() {
         	visibility: hidden;
         	width: 80%;
         	background-color: rgba(0, 0, 0, 0.6) !important;
-        	color: #fff;
+        	color: #fff !important;
         	text-align: center;
         	padding: 10px;
         	position: absolute;
@@ -2931,6 +2932,12 @@ function addInternalStyles() {
         
         #dmca-profile-fb svg, #dmca-profile-twitter svg, #dmca-profile-linkedin svg {
             display: inline !important;
+        }
+        
+        #dmca-btn-creator-profile {
+           opacity: 0.5 !important;
+        	  pointer-events: none !important;
+        	  cursor: none !important;
         }
 
     `;
