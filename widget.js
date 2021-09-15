@@ -2552,6 +2552,7 @@ function addInternalStyles() {
         
         .dmca-btn:hover {
         	cursor: pointer;
+         text-decoration: none !important;
         }
         
         .dmca-btn:focus {
@@ -2758,7 +2759,8 @@ function addInternalStyles() {
         }
         
         #dmca-widget-settings h5 {
-        	margin-top: 15px;
+        	margin-top: 15px !important;
+         margin-bottom: 0px !important;
         	font-size: 14px;
         }
         
@@ -2926,6 +2928,11 @@ function addInternalStyles() {
             display: none;
             z-index: 350;
         }
+        
+        #dmca-profile-fb svg, #dmca-profile-twitter svg, #dmca-profile-linkedin svg {
+            display: inline !important;
+        }
+
     `;
               
     /* Create style element */
