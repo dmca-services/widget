@@ -675,14 +675,16 @@ window.onload = function init() {
     document.getElementById("dmca-btn-add-all-pages").addEventListener("click", function (event) {
         event.preventDefault();
 
-        loading();
+        displayProgressMsg();
+        
+        let msg_ele = document.getElementById("dmca-progress-msg");
         
         if(getCookie("dmca_validated_" + window.location.hostname) != "true" || getCookie("dmca_account_id") != getCookie("dmca_loggedin_account_id")) {
             hide(document.getElementById("dmca-btn-update"));
             hide(document.getElementById("dmca-btn-protect"));
             hide(document.getElementById("dmca-site-profile"));
             show(document.getElementById("dmca-claim-domain"));
-            removeLoading();
+            removeProgressMsg();
         } else {
 
             let pages = [];
@@ -695,11 +697,18 @@ window.onload = function init() {
             }
     
             let total_pages = pages.length;
+            
+            if(total_pages == 1) {
+                msg_ele.innerHTML = "Found 1 URL...<br> Queue for protecting..."
+            } else {
+                msg_ele.innerHTML = "Found " + total_pages + " URLs...<br> Queue for protecting..."
+            }
+            
             let count_pages = 0;
             let added_pages = 0;
             let token = getCookie("dmca_token");
             let acc_id = getCookie("dmca_account_id");
-    
+            
             pages.map(id => {
     
                 let thumbnail = "https://image.thum.io/get/width/1280/crop/720/maxAge/24/noanimate/allowJPG/" + id;
@@ -755,6 +764,7 @@ window.onload = function init() {
                                             .then((data) => {
                                                 count_pages++;
                                                 added_pages++;
+                                                msg_ele.innerHTML = "Protecting...<br>" + count_pages + " of " + total_pages + " are protected";
                                                 if (added_pages == total_pages) {
                                                     protectAllPagesDisplayMsg(count_pages, total_pages);
                                                 }
@@ -971,6 +981,8 @@ function createWidgetElements() {
         <span class="dmca-bg-gray"></span>
         <span class="dmca-bg-green"></span>
     </div>
+    
+    <div id="dmca-progress-msg" class="dmca-progress-msg-no">Scanning</div>
     
     <svg id="dmca-icon-star" width="20px" height="20px" viewBox="0 0 362.62 388.52">
         <path d="M156.58,239l-88.3,64.75c-10.59,7.06-18.84,11.77-29.43,11.77-21.19,0-38.85-18.84-38.85-40C0,257.83,14.13,244.88,27.08,239l103.6-44.74L27.08,148.34C13,142.46,0,129.51,0,111.85,0,90.66,18.84,73,40,73c10.6,0,17.66,3.53,28.25,11.77l88.3,64.75L144.81,44.74C141.28,20,157.76,0,181.31,0s40,18.84,36.5,43.56L206,149.52l88.3-64.75C304.93,76.53,313.17,73,323.77,73a39.2,39.2,0,0,1,38.85,38.85c0,18.84-12.95,30.61-27.08,36.5L231.93,194.26,335.54,239c14.13,5.88,27.08,18.83,27.08,37.67,0,21.19-18.84,38.85-40,38.85-9.42,0-17.66-4.71-28.26-11.77L206,239l11.77,104.78c3.53,24.72-12.95,44.74-36.5,44.74s-40-18.84-36.5-43.56Z"></path>
@@ -1596,7 +1608,7 @@ function protectAllPagesDisplayMsg(count_pages, total_pages) {
     }
 
     hide(document.getElementById("dmca-site-profile"));
-    removeLoadingSimple();
+    removeProgressMsg();
     show(document.getElementById("dmca-wrapper-msg-success"));
 
     setTimeout(function () {
@@ -1644,6 +1656,31 @@ function loading() {
 function removeLoading() {
     document.getElementById("dmca-loader").classList.remove('dmca-loader');
     document.getElementById("dmca-loader").classList.add('dmca-loader-no');
+    show(document.getElementById("dmca-icon-star"));
+    document.getElementById("dmca-icon-star").classList.add("dmca-animate");
+    
+    setTimeout(function () {
+        hide(document.getElementById("dmca-icon-star"));
+        document.getElementById("dmca-icon-star").classList.remove("dmca-animate");
+        hide(document.getElementById("dmca-widget-overlay"));
+    }, 1400);
+    
+}
+
+// Display progress message
+function displayProgressMsg() {
+    show(document.getElementById("dmca-widget-overlay"));
+    let ele = document.getElementById("dmca-progress-msg");
+    ele.innerHTML = "Scanning";
+    ele.classList.remove('dmca-progress-msg-no');
+    ele.classList.add('dmca-progress-msg');
+}
+
+// Remove progress message 
+function removeProgressMsg() {
+    let ele = document.getElementById("dmca-progress-msg");
+    ele.classList.remove('dmca-progress-msg');
+    ele.classList.add('dmca-progress-msg-no');
     show(document.getElementById("dmca-icon-star"));
     document.getElementById("dmca-icon-star").classList.add("dmca-animate");
     
@@ -2844,7 +2881,7 @@ function addInternalStyles() {
         	text-align: justify;
         }
         
-        .dmca-loader-no {
+        .dmca-loader-no, .dmca-progress-msg-no {
         	display: none;
         }
         
@@ -2856,6 +2893,19 @@ function addInternalStyles() {
             justify-content: center;
             align-items: center;
         	z-index: 100000;
+        }
+        
+        .dmca-progress-msg {
+            width: 100%;
+            color: #6BC530;
+            font-weight: 800;
+            position: absolute;
+            top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100000;
+            text-align: center;
         }
         
         .dmca-loader>span {
