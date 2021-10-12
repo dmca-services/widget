@@ -896,6 +896,16 @@ window.onload = function init() {
             });
         }
     });
+    
+    // Check status certificate
+    document.getElementsByClassName("dmca-header-content1")[0].addEventListener("click", function (event) {
+        event.preventDefault();
+        if(getCookie("dmca_account_id") != "") {
+            let status_url = "https://www.dmca.com/Protection/Status.aspx?ID=" + getCookie("dmca_account_id") + "&refurl=" + window.location.href;
+            let target = window.open(status_url, '_blank');
+            target.focus();
+        }
+    });
 
 }
 
@@ -2266,6 +2276,10 @@ function addInternalStyles() {
         
         .dmca-header-content1>div:last-child, .dmca-header-content2>div:last-child {
         	margin-right: 0px;
+        }
+        
+        .dmca-header-content1 div {
+        	cursor: pointer !important;
         }
         
         #dmca-logo, #dmca-page-status, #dmca-lock, #dmca-menu, #dmca-verified, #dmca-min-max-arrows {
