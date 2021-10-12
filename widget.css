@@ -727,7 +727,7 @@ svg#dmca-upload:hover {
 
 /* Loader styles */
 
-.dmca-loader-no {
+.dmca-loader-no, .dmca-progress-msg-no {
 	display: none;
 }
 
@@ -739,6 +739,19 @@ svg#dmca-upload:hover {
     justify-content: center;
     align-items: center;
 	z-index: 100000;
+}
+        
+.dmca-progress-msg {
+    width: 100%;
+    color: #6BC530;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+	text-align: center;
 }
 
 .dmca-loader>span {
