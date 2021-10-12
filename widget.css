@@ -149,6 +149,10 @@ h5.dmca-title {
 	margin-right: 0px;
 }
 
+.dmca-header-content1 div {
+	cursor: pointer !important;
+}
+
 #dmca-logo, #dmca-page-status, #dmca-lock, #dmca-menu, #dmca-verified, #dmca-min-max-arrows {
 	box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 3px;
 }
