@@ -515,7 +515,7 @@ window.onload = function init() {
                                     title: document.title,
                                     description: page_d_content,
                                     thumbnailUrl: assetThumbnailUrl,
-                                    type: "Page",
+                                    type: "Web page",
                                     status: "Active"
                                 };
     
@@ -1462,7 +1462,17 @@ function updateAssetDetails(data) {
         thumb = thumb.replace(/\+/g, "%2B");
         document.getElementById("dmca-thumbnail").setAttribute("src", thumb);
     }
-    el.setAttribute("data-type", data.type);
+    let asset_type = data.type.toLowerCase();
+    if(asset_type == "page" || asset_type == "web page") {
+    	asset_type = "Web page";
+    } else if(asset_type == "ebook") {
+    	asset_type = "eBook";
+    } else if(asset_type == "ugc") {
+    	asset_type = "UGC";
+    } else {
+    	asset_type = asset_type.charAt(0).toUpperCase() + asset_type.slice(1);
+    }
+    el.setAttribute("data-type", asset_type);
     el.setAttribute("data-status", data.status);
 }
 
